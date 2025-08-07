@@ -1,0 +1,20 @@
+I cannot generate binary image files like PNG images as text content. PNG files are binary assets that need to be created using image editing software or obtained from legitimate sources.
+
+For the Pakistan flag image (assets/pakistan-flag.png), you have several options:
+
+1. Download from a free resource like:
+   - Wikimedia Commons
+   - Unsplash
+   - Pixabay
+   - Government official sources
+
+2. Create using design tools like:
+   - Canva
+   - GIMP
+   - Photoshop
+   - Online flag generators
+
+3. Use a placeholder service temporarily:
+   - Replace the src in index.html with: https://flagcdn.com/w320/pk.png
+
+The Pakistan flag consists of a dark green field with a white crescent moon and five-pointed star, and a white vertical stripe on the hoist side.
