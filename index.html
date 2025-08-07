@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello World Pakistan - A tribute to the beautiful nation of Pakistan">
+    <meta name="keywords" content="Pakistan, Hello World, Pakistani culture, web development">
+    <meta name="author" content="Hello World Pakistan">
+    
+    <title>Hello World Pakistan</title>
+    
+    <!-- Preconnect to Google Fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Urdu+Typesetting:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇰</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading...</p>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Background Elements -->
+        <div class="background-elements" aria-hidden="true">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="star-field"></div>
+        </div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <nav class="navigation" role="navigation" aria-label="Main navigation">
+                <div class="nav-brand">
+                    <span class="brand-text">Pakistan</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#culture" class="nav-link">Culture</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" role="banner">
+            <div class="hero-content">
+                <div class="flag-container">
+                    <img src="assets/pakistan-flag.png" alt="Flag of Pakistan" class="pakistan-flag" loading="lazy">
+                    <div class="flag-glow"></div>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Hello World</span>
+                    <span class="title-line title-highlight">Pakistan</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    <span class="urdu-text">آپ کا خیر مقدم ہے</span>
+                    <span class="english-text">Welcome to the Land of the Pure</span>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="220">0</span>
+                        <span class="stat-label">Million People</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1947">0</span>
+                        <span class="stat-label">Independence Year</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Provinces</span>
+                    </div>
+                </div>
+                
+                <button class="cta-button" id="explore-btn" aria-label="Explore Pakistan">
+                    <span class="btn-text">Explore Pakistan</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title">About Pakistan</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">🏔️</div>
+                        <h3 class="card-title">Natural Beauty</h3>
+                        <p class="card-description">From the mighty Himalayas to the Arabian Sea, Pakistan boasts diverse landscapes and breathtaking natural wonders.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">🏛️</div>
+                        <h3 class="card-title">Rich Heritage</h3>
+                        <p class="card-description">Home to ancient civilizations, magnificent architecture, and a cultural heritage spanning thousands of years.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">🤝</div>
+                        <h3 class="card-title">Warm Hospitality</h3>
+                        <p class="card-description">Known for the warmth and generosity of its people, Pakistan welcomes visitors with open hearts and open doors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section id="culture" class="culture-section">
+            <div class="section-container">
+                <h2 class="section-title">Pakistani Culture</h2>
+                <div class="culture-showcase">
+                    <div class="culture-item" data-culture="food">
+                        <div class="culture-icon">🍛</div>
+                        <h3>Cuisine</h3>
+                    </div>
+                    <div class="culture-item" data-culture="music">
+                        <div class="culture-icon">🎵</div>
+                        <h3>Music</h3>
+                    </div>
+                    <div class="culture-item" data-culture="art">
+                        <div class="culture-icon">🎨</div>
+                        <h3>Arts</h3>
+                    </div>
+                    <div class="culture-item" data-culture="festivals">
+                        <div class="culture-icon">🎉</div>
+                        <h3>Festivals</h3>
+                    </div>
+                </div>
+                
+                <div class="culture-details" id="culture-details">
+                    <div class="culture-content" data-content="food">
+                        <h4>Pakistani Cuisine</h4>
+                        <p>Experience the rich flavors of biryani, karahi, kebabs, and traditional sweets that make Pakistani cuisine world-renowned.</p>
+                    </div>
+                    <div class="culture-content" data-content="music">
+                        <h4>Musical Heritage</h4>
+                        <p>From classical qawwali to modern pop, Pakistani music reflects the soul of the nation with legendary artists like Nusrat Fateh Ali Khan.</p>
+                    </div>
+                    <div class="culture-content" data-content="art">
+                        <h4>Arts & Crafts</h4>
+                        <p>Discover intricate handicrafts, beautiful textiles, miniature paintings, and architectural marvels that showcase Pakistani artistry.</p>
+                    </div>
+                    <div class="culture-content" data-content="festivals">
+                        <h4>Celebrations</h4>
+                        <p>Join the vibrant celebrations of Eid, Basant, and other festivals that bring communities together in joy and unity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Elements -->
+        <div class="interactive-elements">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+            
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-progress"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Made with <span class="heart">❤️</span> for Pakistan
+                </p>
+                <p class="footer-subtitle">
+                    <span class="urdu-text">پاکستان زندہ باد</span>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration for PWA capabilities -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').catch(function(error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
